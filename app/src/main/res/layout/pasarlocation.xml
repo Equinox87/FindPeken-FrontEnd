@@ -11,7 +11,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
 
-        app:cardBackgroundColor="@color/teal_200">
+        app:cardBackgroundColor="@color/colorPrimary">
         <TextView
             android:id="@+id/pasarlocationaname"
             android:layout_width="wrap_content"

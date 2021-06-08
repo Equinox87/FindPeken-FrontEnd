@@ -1,6 +1,7 @@
 package com.example.findpeken;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 import android.content.Intent;
@@ -27,6 +28,9 @@ public class PasarDetail extends AppCompatActivity   {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pasar_detail);
+//        Toolbar toolbar = findViewById(R.id.toolbar_pasar_detail);
+//        setSupportActionBar(toolbar);
+
         detailimage=(ImageView) findViewById(R.id.detailpasarimage);
         pasarid=(TextView) findViewById(R.id.pasarid);
         detailnama=(TextView) findViewById(R.id.detailpasarnama);

@@ -28,10 +28,13 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".SplashScreen" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Home">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,36 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
+    android:layout_gravity="center"
     android:gravity="center"
-    android:background="#E3E0E0"
     tools:context=".SplashScreen">
 
-    <androidx.cardview.widget.CardView
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_gravity="center"
-        android:background="@color/white"
-        android:padding="50dp">
-            <ImageView
-                android:layout_marginTop="-30dp"
-                android:id="@+id/logoapp"
-                android:layout_width="800px"
-                android:layout_height="800px"
-                android:layout_gravity="center"
-                android:src="@drawable/logofp"
-                />
-            <TextView
-                android:id="@+id/splashscreen"
-                android:layout_marginBottom="100px"
-                android:layout_gravity="bottom|center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Splash Screen"
-                android:textSize="30dp"/>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/findpeken_logo" />
 
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Find Peken"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
 
 </LinearLayout>
