@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutFragment">
+    android:background="#EFE7E7">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_photo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/person"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:elevation="5dp"
+            />
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-40dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/namauser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I GEDE RAMA WAHYUDANA"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/emailuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ramaw@gmail.com"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

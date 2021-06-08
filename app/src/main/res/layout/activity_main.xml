@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#F8EEEE">
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -32,13 +33,14 @@
         android:padding="30dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
         >
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="400px"
-            android:layout_height="400px"
-            android:src="@drawable/logofp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-20dp"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/ic_pasar"
+            android:layout_gravity="center"
             />
         <TextView
             android:text="PASAR"
@@ -52,7 +54,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/maps"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
         android:layout_width="500px"
         android:layout_height="500px"
         android:layout_marginRight="10dp"
@@ -63,10 +65,11 @@
         android:padding="30dp"
         >
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="400px"
-            android:layout_height="400px"
-            android:src="@drawable/logofp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-20dp"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/ic_maps"
+            android:layout_gravity="center"
             />
 
         <TextView

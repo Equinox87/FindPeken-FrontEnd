@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PasarDetail">
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:id="@+id/detailpasarimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_pasar"
+        />
+    <LinearLayout
+        android:background="#93E3BE"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/detailpasarimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/detailpasarnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pasar"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/detailpasaralamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Alamat"
+            android:textSize="20dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/detailpasardeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Deskripsi"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/detailpasarlatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Latitude"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/detailpasarlongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Longitude"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/pasarid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Longitude"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/mapredirect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redirect Map"
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

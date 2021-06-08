@@ -1,8 +1,9 @@
 package com.example.findpeken.model;
 
-import com.google.gson.annotations.SerializedName;
 
-public class PasarModel {
+import java.io.Serializable;
+
+public class PasarModel implements Serializable {
     private int pasar_id;
     private String pasar_nama;
     private String pasar_deskripsi;
@@ -10,6 +11,7 @@ public class PasarModel {
     private double latitude;
     private double longitude;
     private String pasar_gambar;
+
 
     public PasarModel(int pasar_id, String pasar_nama, String pasar_deskripsi, String pasar_alamat,
                       double latitude, double longitude, String pasar_gambar) {

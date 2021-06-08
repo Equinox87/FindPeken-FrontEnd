@@ -1,4 +1,4 @@
-package com.example.findpeken;
+package com.example.findpeken.fragment;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.findpeken.R;
 import com.example.findpeken.adapter.PasarAdapter;
 import com.example.findpeken.api.APIClient;
 import com.example.findpeken.api.ApiInterface;
@@ -70,7 +71,7 @@ public class PasarFragment extends Fragment implements SwipeRefreshLayout.OnRefr
                 @Override
                 public void onResponse(Call<Value> call, Response<Value> response) {
                     listpasar= response.body().getData();
-                    pasarAdapter = new PasarAdapter(listpasar);
+                    pasarAdapter = new PasarAdapter(getActivity(),listpasar);
                     pasarAdapter.notifyDataSetChanged();
                     pasarrecycler.setAdapter(pasarAdapter);
                     swipeRefreshLayout.setRefreshing(false);

@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home= new Intent(MainActivity.this, Home.class);
+                home.putExtra("key","1");
                 startActivity(home);
 
             }
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home= new Intent(MainActivity.this, Home.class);
+                home.putExtra("key","0");
                 startActivity(home);
 
             }

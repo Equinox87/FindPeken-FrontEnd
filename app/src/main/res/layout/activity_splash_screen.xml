@@ -6,15 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#E3E0E0"
     tools:context=".SplashScreen">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="800px"
-        android:layout_height="516dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         android:layout_gravity="center"
         android:background="@color/white"
         android:padding="50dp">
             <ImageView
+                android:layout_marginTop="-30dp"
                 android:id="@+id/logoapp"
                 android:layout_width="800px"
                 android:layout_height="800px"
@@ -22,6 +26,7 @@
                 android:src="@drawable/logofp"
                 />
             <TextView
+                android:id="@+id/splashscreen"
                 android:layout_marginBottom="100px"
                 android:layout_gravity="bottom|center"
                 android:layout_width="wrap_content"
