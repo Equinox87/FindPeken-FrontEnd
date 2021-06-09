@@ -39,8 +39,8 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View about=inflater.inflate(R.layout.fragment_about, container, false);
-        emailuser=(TextView)about.findViewById(R.id.emailuser);
-        namauser=(TextView)about.findViewById(R.id.namauser);
+//        emailuser=(TextView)about.findViewById(R.id.emailuser);
+//        namauser=(TextView)about.findViewById(R.id.namauser);
         imageuser=(CircleImageView)about.findViewById(R.id.user_profile_photo);
         mApiInterface= APIClient.getClient().create(ApiInterface.class);
         loaddata();

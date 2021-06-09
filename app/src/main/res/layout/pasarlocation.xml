@@ -20,11 +20,10 @@
             android:textSize="15dp"
             android:text="Nama Pasar"
             android:textColor="@color/black"
-            android:fontFamily="@font/poppins"
+            android:fontFamily="@font/poppins_bold"
             android:paddingLeft="10dp"
             android:layout_margin="5dp"
             />
-
 
     </androidx.cardview.widget.CardView>
 
