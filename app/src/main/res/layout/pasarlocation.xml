@@ -6,19 +6,22 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:contentPadding="5dp"
-        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="8dp">
 
         app:cardBackgroundColor="@color/colorPrimary">
         <TextView
             android:id="@+id/pasarlocationaname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:text="Nama Pasar"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="10dp"
             android:layout_margin="5dp"
             />
 

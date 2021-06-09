@@ -42,6 +42,7 @@ public class PasarFragment extends Fragment implements SwipeRefreshLayout.OnRefr
         View pasar=inflater.inflate(R.layout.fragment_pasar, container, false);
         pasarrecycler=(RecyclerView) pasar.findViewById(R.id.listpasar);
         Log.d(TAG, "onCreateView: tampilan awal");
+
         RecyclerView.LayoutManager mLayoutmanager= new LinearLayoutManager(getActivity().getApplicationContext());
         pasarrecycler.setLayoutManager(mLayoutmanager);
         pasarrecycler.setHasFixedSize(true);
