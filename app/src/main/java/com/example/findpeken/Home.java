@@ -15,13 +15,14 @@ import com.example.findpeken.fragment.PasarFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
-
+    BottomNavigationView bottomNavigation;
+    MenuItem item;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        bottomNavigation = findViewById(R.id.bottomNavigationView);
         choosefragment();
-        BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -58,9 +59,11 @@ public class Home extends AppCompatActivity {
                 if (mapid != null && !mapid.equals("")) {
                     fragmentmap.setArguments(bundle);
                 }
+               item= bottomNavigation.getMenu().findItem(R.id.menumaps).setChecked(true);
                 getFragmentPage(fragmentmap);
             }else if(key.equals("0")){
                 Fragment fragmentpasar= new PasarFragment();
+                item= bottomNavigation.getMenu().findItem(R.id.menupasar).setChecked(true);
                 getFragmentPage(fragmentpasar);
             }
 

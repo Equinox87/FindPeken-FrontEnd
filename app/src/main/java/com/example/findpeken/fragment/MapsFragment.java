@@ -21,7 +21,6 @@ import android.widget.RelativeLayout;
 import com.example.findpeken.PasarDetail;
 import com.example.findpeken.R;
 import com.example.findpeken.adapter.ListPasarMapAdapter;
-import com.example.findpeken.adapter.PasarAdapter;
 import com.example.findpeken.api.APIClient;
 import com.example.findpeken.api.ApiInterface;
 import com.example.findpeken.model.ClusterMarker;
@@ -32,11 +31,11 @@ import com.example.findpeken.util.IPasarLocate;
 import com.example.findpeken.util.WrapperMapAnimation;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
+
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
+
 
 import com.google.maps.android.clustering.ClusterManager;
 
@@ -49,12 +48,10 @@ import retrofit2.Response;
 
 public class MapsFragment extends Fragment implements OnMapReadyCallback, ClusterManager.OnClusterItemInfoWindowClickListener<ClusterMarker> , IPasarLocate, SwipeRefreshLayout.OnRefreshListener {
     public GoogleMap googleMaps;
-    private static  final  String MAPVIEWBUNDLEKEY="MapViewBundleKey";
     private static final String TAG = "MapsFragment";
     private  SwipeRefreshLayout swipeRefreshLayout;
     private RecyclerView recyclerView;
     private ArrayList<PasarModel> pasarModelArrayList;
-    private LatLngBounds latLngBounds;
     private ClusterManager<ClusterMarker> clusterManager;
     private ClusterRender clusterRender;
     private ArrayList<ClusterMarker> clusterMarkerArrayList= new ArrayList<>();
@@ -87,15 +84,6 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback, Cluste
             }
         });
         mApiInterface= APIClient.getClient().create(ApiInterface.class);
-//        swipeRefreshLayout = (SwipeRefreshLayout) maps.findViewById(R.id.refreshmaps);
-//        swipeRefreshLayout.setOnRefreshListener( this);
-//        swipeRefreshLayout.post(new Runnable() {
-//            @Override
-//            public void run() {
-//                swipeRefreshLayout.setRefreshing(true);
-//                initPasarData();
-//            }
-//        });
         Bundle bundle = this.getArguments();
         if (bundle!=null){
             myValue = bundle.getString("mapid");
@@ -142,13 +130,13 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback, Cluste
                 @Override
                 public void onFailure(Call<Value> call, Throwable t) {
                     Log.d(TAG, "onFailure: failed load data! : "+t.getMessage());
-//                    swipeRefreshLayout.setRefreshing(false);
+
                 }
             });
 
         }catch (Exception e){
             Log.d(TAG, "loadData: Load Data Failed !!, error: "+e.getMessage());
-//            swipeRefreshLayout.setRefreshing(false);
+
         }
 
 
