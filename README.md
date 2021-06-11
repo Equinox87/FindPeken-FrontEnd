@@ -1,4 +1,4 @@
-# FindPeken Front Readme
+# FindPeken Frontend Readme
 
 1. Clone project
 2. Buat API key di https://console.cloud.google.com/
